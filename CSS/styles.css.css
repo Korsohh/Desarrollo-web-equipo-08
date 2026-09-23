@@ -1,0 +1,39 @@
+/* Estilos base del proyecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
