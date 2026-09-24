@@ -1,10 +1,11 @@
-/* Estilos base del proyecto */
+/* ===== Reset general ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== Estilos del body ===== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,6 +14,7 @@ body {
     padding: 20px;
 }
 
+/* ===== Header y navegacion ===== */
 header {
     background: linear-gradient(90deg, #214f46 0%, #2d6c73 100%);
     color: #edf8f4;
@@ -27,6 +29,7 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Links del nav en fila horizontal */
 nav ul {
     list-style: none;
     display: flex;
@@ -35,6 +38,7 @@ nav ul {
     margin-top: 10px;
 }
 
+/* Estilo de los links tipo pastilla */
 nav a {
     text-decoration: none;
     color: #edf8f4;
@@ -48,11 +52,13 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.18);
 }
 
+/* ===== Contenido principal ===== */
 main {
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* Cada section es una tarjeta con fondo claro */
 section {
     background: rgba(255, 255, 255, 0.35);
     border: 1px solid #bdd7d1;
@@ -61,6 +67,7 @@ section {
     margin-bottom: 20px;
 }
 
+/* ===== Tipografia general ===== */
 h2, h3 {
     color: #1d3d37;
     margin-bottom: 0.6rem;
@@ -70,10 +77,12 @@ p {
     color: #2b3f3a;
 }
 
-footer p {
-    color: #ffffff;   /* Color claro para que se lea sobre fondo oscuro */
+/* Subrayado del titulo de turismo en index */
+#Turismo h2 {
+    text-decoration: underline;
 }
 
+/* ===== Imagenes ===== */
 img {
     display: block;
     max-width: 100%;
@@ -83,38 +92,33 @@ img {
     margin: 0.8rem 0;
 }
 
-footer {
-    margin-top: 40px;
-    background: #214f46;
-    color: #edf8f4;
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
+/* Efecto zoom suave al pasar el mouse */
+.img-zoom {
+    transition: transform 0.3s ease;
 }
 
+.img-zoom:hover {
+    transform: scale(1.025);
+}
+
+/* ===== Tarjetas de turismo (index) ===== */
+
+/* Pone las dos tarjetas lado a lado */
 .tarjetas-horizontales {
-    display: flex; /* Los articules se ponen en fila */
-    gap: 20px; /* Espacio entre las tarjetas */
+    display: flex;
+    gap: 20px;
 }
 
+/* Cada tarjeta ocupa la mitad del espacio */
 .tarjetas-horizontales article {
-    flex: 1; /* El 1 reparte el espacio equitativamente */
+    flex: 1;
 }
 
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid;         /* Borde suave */
-    border-radius: 8px;
-    font-size: 1rem;           /* Tamaño de letra */
-    font-family: Arial, sans-serif;
-}
-
-form button {
+/* ===== Botones y links con estilo boton ===== */
+button {
     background: #214f46;
     color: #ffffff;
-    padding: 10px 30px;        /* Relleno: 10px arriba/abajo, 30px a los lados */
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -122,23 +126,78 @@ form button {
     margin-top: 10px;
 }
 
-form button:hover {
-    background: #2d6c73;       /* Color más claro al pasar el mouse */
+/* Link que se ve como boton (para los <a>) */
+.button_link {
+    background: #214f46;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
 }
 
+/* Hover para ambos tipos de boton */
+button:hover,
+.button_link:hover {
+    background: #2d6c73;
+}
+
+/* ===== Formulario de reserva ===== */
+
+/* Espacio entre cada campo */
+form div {
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 1px 2px;
+}
+
+/* Area de texto del mensaje */
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Seccion de contacto ===== */
 #Contacto ul {
     padding: 0px 25px;
 }
 
+/* Separador entre cada dato de contacto */
 #Contacto li {
     padding: 8px;
     border-bottom: 1px solid #bdd7d1;
 }
 
+/* Quita la linea del ultimo item */
 #Contacto li:last-child {
     border-bottom: none;
 }
 
 #Contacto p {
     padding-top: 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 40px;
+    background: #214f46;
+    color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Texto del footer en blanco para que se lea */
+footer p {
+    color: #ffffff;
+    padding: 20px;
 }

@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solemne 1 - Equipo 08</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="index.html">Destino Cordillera</a>
-                <ul class="navbar-nav ms-auto mb-2">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="panoramas.html">Panoramas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="alojamiento.html">Alojamiento y Gastronomía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas y contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio - Destino Cordillera</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-    <main id="inicio">
-        <section>
-            <h2>Bienvenido a Destino Cordillera</h2>
-            <p>Descubre un destino turístico rodeado de paisajes naturales, aventura, tranquilidad y autenticidad cultural. Aquí encontrarás experiencias para relajarte, explorar y vivir la montaña de una manera cercana y memorable.</p>
-        </section>
-    </main>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <h1>Destino Cordillera</h1>
+                    <ul class="navbar-nav ms-auto mb-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="panoramas.html">Panoramas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="alojamiento.html">Alojamiento y Gastronomía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas y contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <main id="inicio">
             <!--Presentación de la página-->
@@ -46,20 +40,26 @@
             <!--Opciones de turismo-->
             <section id="Turismo">
                 <h2>Explora y turistea</h2>
-
+                <!--Tarjetas-->
                 <div class="tarjetas-horizontales">
+                    <!--1ra tarjeta-->
                     <article>
                         <h3>Panoramas</h3>
-                        <a href="panoramas.html"><img src="img/pumin_panorama.jpg" alt="Pumin disfrutando del panorama"></a>
+                        <a href="panoramas.html">
+                            <img src="img/pumin_panorama.jpg" alt="Pumin disfrutando del panorama" class="img-zoom">
+                        </a>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                             Itaque natus facere dolores nam possimus pariatur nulla omnis voluptatibus similique repudiandae.
                         </p>
                     </article>
 
+                    <!--2da tarjeta-->
                     <article>
                         <h3>Alojamiento</h3>
-                        <a href="alojamiento.html"><img src="img/pumin_alojamiento.png" alt="Pumin descansando en el alojamiento que reservó"></a>
+                        <a href="alojamiento.html">
+                            <img src="img/pumin_alojamiento.png" alt="Pumin descansando en el alojamiento que reservó" class="img-zoom">
+                        </a>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, 
                             totam eaque cumque labore excepturi accusamus, aperiam temporibus nemo quas, 
@@ -78,12 +78,11 @@
                     excursiones y alojamientos.
                 </p>
 
-                <a href="reservas.html">Ir a reservas</a>
+                <a href="reservas.html" class="button_link">Ir a reservas</a>
             </section>
         </main>
 
         <footer>
-            <p>Solemne 01 - Practica</p>
             <p>&copy; 2026 Equipo 08 - Universidad Autónoma de Chile</p>
         </footer>
     </body>
