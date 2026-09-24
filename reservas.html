@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Destino Cordillera</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Destino Cordillera</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="panoramas.html">Panoramas</a></li>
+                    <li><a href="alojamiento.html">Alojamiento y Gastronomía</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <section id="Reserva">
+            <h2>Reserva acá tu próximo viaje</h2>
+            <form id="formulario-reserva">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.cl" maxlength="100" required>
+                </div>
+
+                <div>
+                    <label for="numero">Número de teléfono:</label>
+                    <input type="tel" id="numero" name="numero" placeholder="56988887777" minlength="3" maxlength="11" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Su mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Detesto esta página porque..." rows="4" required></textarea>
+                </div>
+
+                <button>Enviar</button>
+            </form>
+        </section>
+
+        <section id="Contacto">
+            <h2>¿Dudas? ¡Contactanos!</h2>
+            <ul>
+                <li>Horario de atención: De 3:00 AM hasta las 5:00 AM</li>
+                <li>Correo: reservas@cordilleras.cl</li>
+                <li>Número: +569 9999 8888</li>
+                <li>Wasap: +569 7777 6666</li>
+                <li>Av. San José María Escrivá de Balaguer 13.105, Oficina 717 Lo Barnechea - Región Metropolitana</li>
+            </ul>
+            <p>Considere que cualquier mensaje enviado fuera del horario de atención será sancionado con la muerte</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Equipo 08 - Destino Cordillera</p>
+        </footer>
+    </body>
+</html>
