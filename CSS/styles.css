@@ -70,6 +70,10 @@ p {
     color: #2b3f3a;
 }
 
+footer p {
+    color: #ffffff;   /* Color claro para que se lea sobre fondo oscuro */
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -87,4 +91,13 @@ footer {
     padding: 1rem;
     text-align: center;
     font-size: 0.9rem;
+}
+
+.tarjetas-horizontales {
+    display: flex; /* Los articules se ponen en fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.tarjetas-horizontales article {
+    flex: 1; /* El 1 reparte el espacio equitativamente */
 }
