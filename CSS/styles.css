@@ -101,3 +101,44 @@ footer {
 .tarjetas-horizontales article {
     flex: 1; /* El 1 reparte el espacio equitativamente */
 }
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;         /* Borde suave */
+    border-radius: 8px;
+    font-size: 1rem;           /* Tamaño de letra */
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    background: #214f46;
+    color: #ffffff;
+    padding: 10px 30px;        /* Relleno: 10px arriba/abajo, 30px a los lados */
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #2d6c73;       /* Color más claro al pasar el mouse */
+}
+
+#Contacto ul {
+    padding: 0px 25px;
+}
+
+#Contacto li {
+    padding: 8px;
+    border-bottom: 1px solid #bdd7d1;
+}
+
+#Contacto li:last-child {
+    border-bottom: none;
+}
+
+#Contacto p {
+    padding-top: 20px;
+}
